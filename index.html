@@ -137,10 +137,10 @@
 
         <div class="forma m-2 p-2 m-md-3" id="forma">
             <h1>Форма</h1>
-            <form action="/" method="POST">
+            <form action="submit.php" method="POST">
                 <label for="field-name-1">
                     ФИО:<br>
-                    <input id="field-name-1" name="field-name-1" placeholder="Иванов Иван Алекса" required>
+                    <input id="field-name-1" name="name" placeholder="Иванов Иван Алекса" required>
                 </label><br>
                 <label for="phone">
                     Телефон:<br>
@@ -148,23 +148,23 @@
                 </label><br>
                 <label for="field-email">
                     Электронная почта:<br>
-                    <input id="field-email" name="field-email" type="email" placeholder="ex@example.ex" required>
+                    <input id="field-email" name="email" type="email" placeholder="ex@example.ex" required>
                 </label><br>
                 <label for="field-date">
                     Дата рождения:<br>
-                    <input id="field-date" name="field-date" type="date" required>
+                    <input id="field-date" name="birthdate" type="date" required>
                 </label><br>
 
                     Выберите пол:<br>
                     <label for="male">
-                        <input id="male" type="radio" name="radio-group-1" value="Мужской" required> Мужской
+                        <input id="male" type="radio" name="gender" value="Мужской" required> Мужской
                     </label><br>
                     <label for="female">
-                        <input id="female" type="radio" name="radio-group-1" value="Женский"> Женский
+                        <input id="female" type="radio" name="gender" value="Женский"> Женский
                     </label><br>
                 <label for="field-lang">
                     Любимый язык программирования:<br>
-                    <select id="field-lang" name="field-lang" required>
+                    <select id="field-lang" name="languages" required>
                         <option value="" disabled selected>Выберите язык</option>
                         <option value="Pascal">Pascal</option>
                         <option value="C">C</option>
@@ -181,13 +181,13 @@
                 </label><br>
                 <label for="field-manytext">
                     Биография:<br>
-                    <textarea id="field-manytext" name="fiel-manytext" placeholder="Ваша биография" required></textarea>
+                    <textarea id="field-manytext" name="bio" placeholder="Ваша биография" required></textarea>
                 </label><br>
                 <label for="check">
                     <input id="check" type="checkbox" name="check" required>
                     С контрактом ознакомлен(а)
                 </label><br>
-                <input type="submit" name="save" value="Сохранить">
+                <input type="submit" name="contract_accepted" value="Сохранить">
             </form>
         </div>
 
