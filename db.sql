@@ -4,7 +4,7 @@ CREATE TABLE applications (
     phone VARCHAR(15) NOT NULL,
     email VARCHAR(100) NOT NULL,
     birthdate DATE NOT NULL,
-    gender ENUM('male', 'female', 'other') NOT NULL,
+    gender ENUM('male', 'female') NOT NULL,
     biography TEXT NOT NULL,
     agreement TINYINT(1) NOT NULL,
     PRIMARY KEY (id)
